@@ -42,6 +42,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 4044417355
+    locked: 0
+  - name: Walls
+    uniqueID: 2956679621
+    locked: 0
   - name: Soldiers
     uniqueID: 64337709
     locked: 0
