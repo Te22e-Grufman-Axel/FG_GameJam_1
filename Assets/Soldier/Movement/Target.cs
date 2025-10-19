@@ -15,6 +15,12 @@ public class Target : MonoBehaviour
 
     public void setTargetPos(Vector3 newPos)
     {
+        destinationSetter.target = target;
         target.position = newPos;
+    }
+
+    public void setEnemyAsTarget(Transform newTarget)
+    {
+        destinationSetter.target = newTarget;
     }
 }

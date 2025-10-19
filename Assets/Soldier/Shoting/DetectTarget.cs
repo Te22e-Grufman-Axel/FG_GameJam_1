@@ -4,30 +4,49 @@ public class DetectTarget : MonoBehaviour
 {
     [SerializeField] private float range;
 
-    [SerializeField] private LayerMask layerMask;
+    [SerializeField] private LayerMask DetectLayerMask;
+    [SerializeField] private LayerMask ViewLayerMask;
 
-    [SerializeField] public GameObject enemy;
+    [SerializeField] public GameObject target;
+
+    [SerializeField] public bool targetInView = false;
 
     void Update()
     {
-        if(enemy != null)
+        if(target != null)
         {
-            float dist = Vector2.Distance(enemy.transform.position, this.transform.position);
+            float dist = Vector2.Distance(target.transform.position, this.transform.position);
 
             if(dist > range)
             {
-                enemy = null;
+                target = null;
+            }
+            else
+            {
+                targetInView = CheckIfInView(target.transform);
             }
         }
         else
         {
-            enemy = CheckForEnemys();
+            targetInView = false;
+
+            GameObject detectedTarget = CheckForEnemys();
+
+            if (detectedTarget != null)
+            {
+                targetInView = CheckIfInView(detectedTarget.transform);
+
+                if(targetInView == true)
+                {
+                    target = detectedTarget;
+                }
+            }
         }
     }
 
     private GameObject CheckForEnemys()
     {
-        Collider2D[] allhits = Physics2D.OverlapCircleAll(this.transform.position, range, layerMask);
+        Collider2D[] allhits = Physics2D.OverlapCircleAll(this.transform.position, range, DetectLayerMask);
 
         if (allhits.Length > 0)
         {
@@ -55,5 +74,21 @@ public class DetectTarget : MonoBehaviour
             }
         }
         return null;
+    }
+
+    private bool CheckIfInView(Transform target)
+    {
+        Vector3 dir = target.position - this.transform.position;
+
+        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, dir, dir.magnitude, ViewLayerMask);
+
+        Debug.DrawRay(this.transform.position, dir);
+
+        if (hit.collider != null)
+        {
+            return false;
+        }
+
+        return true;
     }
 }

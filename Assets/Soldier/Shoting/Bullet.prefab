@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2683876206105437944}
   - component: {fileID: 3143946360347888733}
   - component: {fileID: 1180931452286760859}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48,7 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   speed: 10
-  detectableTag: Enemy
+  damageTag: Enemy
+  ignoreTag: Soldier
 --- !u!58 &3143946360347888733
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -62,7 +63,7 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 448
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -79,7 +80,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

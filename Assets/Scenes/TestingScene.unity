@@ -7969,12 +7969,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: AstarPathfindingProject::AstarPath
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAIIewU8lpzdQIAADEFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMFy2jAQ/RVG58LYGGLorXUI6SEJE9LJxRdhrbEGWfJIcoBk+PeuZBs79IR4u2/37dPKX4RLU0FmlV5rzp4UA/JzRNyZ/Bj1wUc40b2SW/4JXc47Z7ZwSdTnvFLLFeKhoxlVgtU8+yX3wiUHCNaS50qXK7aHRBlrEM6pMIAhraxjS4S+RuSEP+Olo5zxNI3d6RNPy2B0wWMG0oLuU6NJGM2Wy8WiJYxbII7iltjwapkJWlbA3BA9fRZOpvOu12ISh0EQhJ4gcdA2N5hEkWuthOCmFUrsufJGJLQyNY6JCYxTHNyrcz4UwPeFdYWH5Jc8N2BbVzQ933ON/jVVyW/VmFpSc2hEflBRuz7hdOFlNUWf/ouPG9W5VuVj1xeHQcgWPDu80nNGjR24PoTvvwuv5ZGKA90JeC9APqu1VrVkGLS6dtTawPS+/3sdLSkgO/R4I/UGrKve/O6Suyt2M1z89KdE8HLnrZ81wFYo77ffDNB4OX9QsN8b05ZA1Kn4a+CN7ocL1gYeuDYWQ+2U0snbqVq7VLLynrlpapsoLcHDregKJBX2vMEy9vYKb2KDtjeRB+qeUtu8jXUv5Ibi4T4/CG5CG3W8XpYp1PEJTPFSW8El9KJd4Bl9SpSUzYYNPelo21rnNBvQ9jVn31eLwN0szmIa3S2Xc6BsPg4Z3YXT2SKasxhoPid+97jEOanYNEJbe/DWZF9c4p51X5jRWtPKbzvT9Ljmn6UaWM5lrraZBpAvTYWrcNDYBB8mWzGOBm3BWi79fZOvlAiVHYCl10Kpn3R1spqmfZWUVPxDWYekJPGflJQ4+LrLGw0fHI6ueVfsQi7/AFBLAwQUAAAICAAACCHsjEa2OG0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0UqqZiXmyeaKxmaWlaWpiiqmuYUpikqGRiYWxaYp5amKaqVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAACCHsFPJac3UCAAAxBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAACCHsjEa2OG0AAAB4AAAACQAkAAAAAAAAAAAAAADCAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAHoDAAAAAA==
+    dataString: UEsDBBQAAAgIAAAIIezDp7uKdQIAADIFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMFy2jAQ/RVG58LYGGLorXUI6SEJE9LJxRdhrbEGWfJIcoBk+PeuZBs79IR4u2/37dPKX4RLU0FmlV5rzp4UA/JzRNyZ/Bj1wUc40b2SW/4JXc47Z7ZwSdTnvFLLFeKhoxlVgtU8+yX3wiUHCNaS50qXK7aHRBlrEM6pMIAhraxjS4S+RuSEP+Olo5zxNI3d6RNPy2B0wWMG0oLuU6NJGM2Wy8WiJYxbII7iltjwapkJWlbA3BA9fRZOpvOu12ISh0EQhJ4gcdA2N5hEkWuthOCmFUrsufJGJLQyNY6JCYxTHNyrcz4UwPeFdYWH5Jc8N2BbVzQ933ON/jVVyW/VmFpSc2hEflBRuz5hOJ96XU3Vp/8Sxo3sXKvysWuM0yBkC54dXuk5o8YObB/C99+V1/JIxYHuBLwXIJ/VWqtaMgxaXTtqbWB63/+9zpYUkB16vJF6A9ZV7353y90duxkufvxTIni5897PGmArlDfcrwZovJ0/KNgvjmlLIOpU/DXwRvfDDWsDD1wbi6F2Sunk7VStXSpZec/cNLVNlJbg4VZ0BZIKe95gGXt7hzexQdubyAN1b6lt3sa6J3JD8XCfHwQ3oY06Xi/LFOr4BKZ4qa3gEnrRLvCMPiVKymbFhp50tG2tc5oNaPuas++rReBuFmcxje6WyzlQNh+HjO7C6WwRzVkMNJ8Tv3tc4pxUbBqhrT14a7IvLnHPuk/MaK1p5dedaXpc889SDSznMlfbTAPIl6bCVThobIIvk60YR4O2YC2X/r7JV0qEyg7A0muh1E+6OllN075KSir+oaxDUpL4b0pKHHzd5Y2GDw5H17wrdiGXf1BLAwQUAAAICAAACCHsjEa2OG0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0UqqZiXmyeaKxmaWlaWpiiqmuYUpikqGRiYWxaYp5amKaqVIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAACCHsw6e7inUCAAAyBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAACCHsjEa2OG0AAAB4AAAACQAkAAAAAAAAAAAAAADCAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAHoDAAAAAA==
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
     cacheStartup: 0
-  showNavGraphs: 0
+  showNavGraphs: 1
   showUnwalkableNodes: 1
   debugMode: 0
   debugFloor: 0
@@ -8021,6 +8021,7 @@ GameObject:
   - component: {fileID: 574889796}
   - component: {fileID: 574889795}
   - component: {fileID: 574889797}
+  - component: {fileID: 574889798}
   m_Layer: 8
   m_Name: Square
   m_TagString: Enemy
@@ -8075,7 +8076,7 @@ SpriteRenderer:
   m_SortingLayerID: 223515979
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 1805822069, guid: 4c4c5f6cfc335854e963c417145b22a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8095,14 +8096,14 @@ Transform:
   m_GameObject: {fileID: 574889794}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.43, y: 2.25, z: 0}
+  m_LocalPosition: {x: 0.65, y: -2.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &574889797
-BoxCollider2D:
+--- !u!58 &574889797
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8114,7 +8115,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -8136,17 +8137,20 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.5
+--- !u!114 &574889798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574889794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256d0d1840aab6746ba6d0795a188ae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  health: 10
 --- !u!1 &1143739400
 GameObject:
   m_ObjectHideFlags: 0
@@ -9104,7 +9108,7 @@ GameObject:
   - component: {fileID: 1564975286}
   - component: {fileID: 1564975285}
   - component: {fileID: 1564975287}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Props
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10250,10 +10254,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectTarget
   range: 5
-  layerMask:
+  DetectLayerMask:
     serializedVersion: 2
     m_Bits: 256
-  enemy: {fileID: 0}
+  ViewLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  target: {fileID: 0}
+  targetInView: 0
 --- !u!114 &1903237736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10267,9 +10275,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shoting
   detectTarget: {fileID: 1903237735}
-  damage: 10
+  damage: 2
   fireRate: 0.5
   spread: 5
+  range: 3
   bullet: {fileID: 4364015895036261236, guid: 0e5837ee997b8b84bb8c7b8b9f9c3d36, type: 3}
   firePos: {fileID: 1502632384}
 --- !u!1660057539 &9223372036854775807

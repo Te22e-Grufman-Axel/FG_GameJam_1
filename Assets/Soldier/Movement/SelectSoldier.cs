@@ -49,6 +49,10 @@ public class SelectSoldier : MonoBehaviour
                 {
                     selectedSoldier = hit.collider.gameObject;
                 }
+                else if (hit.collider != null && hit.collider.gameObject.tag == "Enemy")
+                {
+                    selectedSoldier.GetComponent<Target>().setEnemyAsTarget(hit.collider.transform);
+                }
                 else if (selectedSoldier != null)
                 {
                     selectedSoldier.GetComponent<Target>().setTargetPos(mouseRay.origin);
