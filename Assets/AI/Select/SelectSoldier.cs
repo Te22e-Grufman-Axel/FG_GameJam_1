@@ -51,7 +51,7 @@ public class SelectSoldier : MonoBehaviour
                 }
                 else if (hit.collider != null && hit.collider.gameObject.tag == "Enemy")
                 {
-                    selectedSoldier.GetComponent<Target>().setEnemyAsTarget(hit.collider.transform);
+                    selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
                 }
                 else if (selectedSoldier != null)
                 {

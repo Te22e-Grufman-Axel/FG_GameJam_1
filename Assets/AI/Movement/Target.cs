@@ -19,7 +19,7 @@ public class Target : MonoBehaviour
         target.position = newPos;
     }
 
-    public void setEnemyAsTarget(Transform newTarget)
+    public void setTransformAsTarget(Transform newTarget)
     {
         destinationSetter.target = newTarget;
     }
