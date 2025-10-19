@@ -1,7 +1,64 @@
 fileFormatVersion: 2
-guid: 5845370d89b51ab4ba3683ad2d135dab
+guid: e85b0f31e8dc69842b352318e0ffff32
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6973976892767548302
+    second: Assault-Class_0
+  - first:
+      213: 8509381800993073089
+    second: Assault-Class_1
+  - first:
+      213: -7555987262282287735
+    second: Assault-Class_2
+  - first:
+      213: 6553309977531126943
+    second: Assault-Class_3
+  - first:
+      213: -1862086392823017361
+    second: Assault-Class_4
+  - first:
+      213: -3813807004152967250
+    second: Assault-Class_5
+  - first:
+      213: -6334559972768512570
+    second: Assault-Class_6
+  - first:
+      213: -1533730289814383062
+    second: Assault-Class_7
+  - first:
+      213: -3891630415765020728
+    second: Assault-Class_8
+  - first:
+      213: -2746214466029713098
+    second: Assault-Class_9
+  - first:
+      213: -7562194705256910332
+    second: Assault-Class_10
+  - first:
+      213: -9167116282404952558
+    second: Assault-Class_11
+  - first:
+      213: -8984616923273609000
+    second: Assault-Class_12
+  - first:
+      213: -1347900219587916866
+    second: Assault-Class_13
+  - first:
+      213: -3620984788324582655
+    second: Assault-Class_14
+  - first:
+      213: -3681470474746013787
+    second: Assault-Class_15
+  - first:
+      213: -5892032131471776186
+    second: Assault-Class_16
+  - first:
+      213: -9077654223564043318
+    second: Assault-Class_17
+  - first:
+      213: -5398626847322686276
+    second: Assault-Class_18
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -34,7 +91,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,7 +105,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +129,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,6 +150,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -100,20 +170,20 @@ TextureImporter:
       name: Assault-Class_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 96
-        width: 16
-        height: 16
+        width: 13
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 635ceb574d62e5148adb034bf56146e5
-      internalID: 902424093
+      spriteID: 27cceca37f4773f90800000000000000
+      internalID: -6973976892767548302
       vertices: []
       indices: 
       edges: []
@@ -122,20 +192,20 @@ TextureImporter:
       name: Assault-Class_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 18
         y: 96
-        width: 16
-        height: 16
+        width: 13
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d81968fe9570e7b4cb237cf07514a362
-      internalID: 1953789515
+      spriteID: 1c7ad52d9a5671670800000000000000
+      internalID: 8509381800993073089
       vertices: []
       indices: 
       edges: []
@@ -144,20 +214,20 @@ TextureImporter:
       name: Assault-Class_2
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 80
-        width: 16
-        height: 16
+        width: 13
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ae7bad1690f2cda4d85d755747b6f0ba
-      internalID: -1768086002
+      spriteID: 985b9484e9db32790800000000000000
+      internalID: -7555987262282287735
       vertices: []
       indices: 
       edges: []
@@ -166,20 +236,20 @@ TextureImporter:
       name: Assault-Class_3
       rect:
         serializedVersion: 2
-        x: 16
+        x: 18
         y: 80
-        width: 16
-        height: 16
+        width: 13
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 024de6b053f950740a626ad2a0ead5e8
-      internalID: 1366989687
+      spriteID: f9414c124b802fa50800000000000000
+      internalID: 6553309977531126943
       vertices: []
       indices: 
       edges: []
@@ -188,20 +258,20 @@ TextureImporter:
       name: Assault-Class_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 64
         width: 16
-        height: 16
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4c04e2431fe686647a657c66300c1494
-      internalID: 971552813
+      spriteID: f6012be9a4a8826e0800000000000000
+      internalID: -1862086392823017361
       vertices: []
       indices: 
       edges: []
@@ -210,20 +280,20 @@ TextureImporter:
       name: Assault-Class_5
       rect:
         serializedVersion: 2
-        x: 16
+        x: 18
         y: 64
-        width: 16
-        height: 16
+        width: 15
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d6ef7740d458f564ebb0c8c8c09c7438
-      internalID: 215109710
+      spriteID: eafc0937cb2a21bc0800000000000000
+      internalID: -3813807004152967250
       vertices: []
       indices: 
       edges: []
@@ -232,20 +302,20 @@ TextureImporter:
       name: Assault-Class_6
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 48
-        width: 16
-        height: 16
+        width: 13
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e6ecf741957c0854d81d6d6d61ea6576
-      internalID: -448558304
+      spriteID: 6c589b6444f1718a0800000000000000
+      internalID: -6334559972768512570
       vertices: []
       indices: 
       edges: []
@@ -254,20 +324,20 @@ TextureImporter:
       name: Assault-Class_7
       rect:
         serializedVersion: 2
-        x: 16
+        x: 17
         y: 48
-        width: 16
-        height: 16
+        width: 13
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 968bd2e76eb64bc49bd24b1f8813c3b7
-      internalID: -32920738
+      spriteID: a265b5e6d6817bae0800000000000000
+      internalID: -1533730289814383062
       vertices: []
       indices: 
       edges: []
@@ -278,18 +348,18 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 32
-        width: 16
-        height: 16
+        width: 14
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7248b17537ac2704c9e058eb25258c30
-      internalID: 576518198
+      spriteID: 8cf583f61c62ef9c0800000000000000
+      internalID: -3891630415765020728
       vertices: []
       indices: 
       edges: []
@@ -298,20 +368,20 @@ TextureImporter:
       name: Assault-Class_9
       rect:
         serializedVersion: 2
-        x: 16
+        x: 15
         y: 32
-        width: 16
-        height: 16
+        width: 15
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 92ec4a2bd8ed2ac49b50fe2a241f265c
-      internalID: -577383345
+      spriteID: 63982434e7c73e9d0800000000000000
+      internalID: -2746214466029713098
       vertices: []
       indices: 
       edges: []
@@ -322,18 +392,18 @@ TextureImporter:
         serializedVersion: 2
         x: 32
         y: 32
-        width: 16
-        height: 16
+        width: 14
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2d2b25f8a33ca6645829600577371e0d
-      internalID: 1283550246
+      spriteID: 40272d65bffad0790800000000000000
+      internalID: -7562194705256910332
       vertices: []
       indices: 
       edges: []
@@ -344,18 +414,18 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 16
-        width: 16
-        height: 16
+        width: 14
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b082fa29d94e1144d929799e3c86f055
-      internalID: -1726808888
+      spriteID: 216ad848f4cd7c080800000000000000
+      internalID: -9167116282404952558
       vertices: []
       indices: 
       edges: []
@@ -364,20 +434,20 @@ TextureImporter:
       name: Assault-Class_12
       rect:
         serializedVersion: 2
-        x: 16
+        x: 18
         y: 16
-        width: 16
-        height: 16
+        width: 15
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7ed535da7b14f1040b5a65b54c5e7898
-      internalID: -1282631304
+      spriteID: 8d04055c28a305380800000000000000
+      internalID: -8984616923273609000
       vertices: []
       indices: 
       edges: []
@@ -389,17 +459,17 @@ TextureImporter:
         x: 32
         y: 16
         width: 16
-        height: 16
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a49a4740472ab95438254ac518f567e5
-      internalID: -989731432
+      spriteID: ebb8aca44eb4b4de0800000000000000
+      internalID: -1347900219587916866
       vertices: []
       indices: 
       edges: []
@@ -411,17 +481,17 @@ TextureImporter:
         x: 48
         y: 16
         width: 16
-        height: 16
+        height: 13
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 935d4b2e456e9f843814cbebd49487e4
-      internalID: -807678165
+      spriteID: 10bf1d2158dafbdc0800000000000000
+      internalID: -3620984788324582655
       vertices: []
       indices: 
       edges: []
@@ -433,17 +503,17 @@ TextureImporter:
         x: 64
         y: 16
         width: 16
-        height: 16
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4cad733ed3749e04f91a1b6690999f4c
-      internalID: 1744145451
+      spriteID: 5a7dca5cb1ac8ecc0800000000000000
+      internalID: -3681470474746013787
       vertices: []
       indices: 
       edges: []
@@ -452,20 +522,20 @@ TextureImporter:
       name: Assault-Class_16
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 16
-        height: 16
+        width: 14
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b3cbbbd6e4ec69f41b836fde38bc409e
-      internalID: -698046881
+      spriteID: 646ef666efb4b3ea0800000000000000
+      internalID: -5892032131471776186
       vertices: []
       indices: 
       edges: []
@@ -476,18 +546,18 @@ TextureImporter:
         serializedVersion: 2
         x: 16
         y: 0
-        width: 16
-        height: 16
+        width: 14
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bd8bd92cbc9ecf047b31e8eca4af6caf
-      internalID: -1004043875
+      spriteID: acb04a24491b50280800000000000000
+      internalID: -9077654223564043318
       vertices: []
       indices: 
       edges: []
@@ -496,20 +566,20 @@ TextureImporter:
       name: Assault-Class_18
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 0
-        width: 16
-        height: 16
+        width: 13
+        height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 502a7a89e8a8fb14785dc54b542999d4
-      internalID: -659267471
+      spriteID: cbcb17a4c793415b0800000000000000
+      internalID: -5398626847322686276
       vertices: []
       indices: 
       edges: []
@@ -518,7 +588,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -526,29 +596,27 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Assault-Class_0: 902424093
-      Assault-Class_1: 1953789515
-      Assault-Class_10: 1283550246
-      Assault-Class_11: -1726808888
-      Assault-Class_12: -1282631304
-      Assault-Class_13: -989731432
-      Assault-Class_14: -807678165
-      Assault-Class_15: 1744145451
-      Assault-Class_16: -698046881
-      Assault-Class_17: -1004043875
-      Assault-Class_18: -659267471
-      Assault-Class_2: -1768086002
-      Assault-Class_3: 1366989687
-      Assault-Class_4: 971552813
-      Assault-Class_5: 215109710
-      Assault-Class_6: -448558304
-      Assault-Class_7: -32920738
-      Assault-Class_8: 576518198
-      Assault-Class_9: -577383345
+      Assault-Class_0: -6973976892767548302
+      Assault-Class_1: 8509381800993073089
+      Assault-Class_10: -7562194705256910332
+      Assault-Class_11: -9167116282404952558
+      Assault-Class_12: -8984616923273609000
+      Assault-Class_13: -1347900219587916866
+      Assault-Class_14: -3620984788324582655
+      Assault-Class_15: -3681470474746013787
+      Assault-Class_16: -5892032131471776186
+      Assault-Class_17: -9077654223564043318
+      Assault-Class_18: -5398626847322686276
+      Assault-Class_2: -7555987262282287735
+      Assault-Class_3: 6553309977531126943
+      Assault-Class_4: -1862086392823017361
+      Assault-Class_5: -3813807004152967250
+      Assault-Class_6: -6334559972768512570
+      Assault-Class_7: -1533730289814383062
+      Assault-Class_8: -3891630415765020728
+      Assault-Class_9: -2746214466029713098
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

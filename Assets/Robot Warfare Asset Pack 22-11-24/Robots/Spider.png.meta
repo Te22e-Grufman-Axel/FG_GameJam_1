@@ -1,7 +1,13 @@
 fileFormatVersion: 2
-guid: f6847c509fd58b24b98bc7e6b10fabbd
+guid: f1432c7071711b74ca8392608f26ea46
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3438905571476058607
+    second: Spider_0
+  - first:
+      213: -3439666431560065214
+    second: Spider_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -34,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +49,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,17 +99,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: smoke_0
+      name: Spider_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 6
-        height: 6
+        x: 0
+        y: 15
+        width: 80
+        height: 65
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8cf7f67cf9072e180800000000000000
-      internalID: -9087577266532155448
+      spriteID: 11ece045a9d8640d0800000000000000
+      internalID: -3438905571476058607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoke_1
+      name: Spider_1
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 0
-        width: 8
-        height: 8
+        width: 17
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,30 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dc29d9f3a3444a0f0800000000000000
-      internalID: -1106684591460216115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smoke_2
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 0
-        width: 49
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ad4a5f20146d7fca0800000000000000
-      internalID: -5983078005227543334
+      spriteID: 24fd609ca99d340d0800000000000000
+      internalID: -3439666431560065214
       vertices: []
       indices: 
       edges: []
@@ -166,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -176,9 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      smoke_0: -9087577266532155448
-      smoke_1: -1106684591460216115
-      smoke_2: -5983078005227543334
+      Spider_0: -3438905571476058607
+      Spider_1: -3439666431560065214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
