@@ -10,15 +10,27 @@ public class DetectTarget : MonoBehaviour
     [SerializeField] public GameObject target;
 
     [SerializeField] public bool targetInView = false;
+    [SerializeField] public bool LostTarget = false;
+
+    private AITarget aiTarget;
+
+    private void Awake()
+    {
+        aiTarget = GetComponent<AITarget>();
+    }
 
     void Update()
     {
-        if(target != null)
+        if (target != null)
         {
             float dist = Vector2.Distance(target.transform.position, this.transform.position);
 
-            if(dist > range)
+            if (dist > range)
             {
+                if (aiTarget != null)
+                {
+                    aiTarget.GetToLastSeenPos(target.transform.position);
+                }
                 target = null;
             }
             else
@@ -36,7 +48,7 @@ public class DetectTarget : MonoBehaviour
             {
                 targetInView = CheckIfInView(detectedTarget.transform);
 
-                if(targetInView == true)
+                if (targetInView == true)
                 {
                     target = detectedTarget;
                 }
@@ -68,7 +80,7 @@ public class DetectTarget : MonoBehaviour
                 }
             }
 
-            if(Closest != null)
+            if (Closest != null)
             {
                 return Closest.gameObject;
             }
