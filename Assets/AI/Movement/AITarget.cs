@@ -18,7 +18,7 @@ public class AITarget : MonoBehaviour
     [SerializeField] private bool patrol = false;
     private bool currentlyPatroling = false;
     private bool reversePatrol = false;
-    public int patrolIndex;
+    private int patrolIndex;
     [SerializeField] private bool loopPatrol = false;
     [SerializeField] private Transform Waypoints;
     private List<Transform> patrolList = new List<Transform>();

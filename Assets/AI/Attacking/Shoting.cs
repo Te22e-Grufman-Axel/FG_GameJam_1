@@ -4,8 +4,10 @@ public class Shoting : MonoBehaviour
 {
     [SerializeField] private DetectTarget detectTarget;
 
+
+    [SerializeField] private bool meele;
     [SerializeField] private float damage;
-    [SerializeField] private float fireRate;
+    [SerializeField] private float AttackRate;
     [SerializeField] private float spread;
     [SerializeField] private float range;
 
@@ -31,14 +33,21 @@ public class Shoting : MonoBehaviour
 
                     if (dist <= range)
                     {
-                        timer = fireRate;
+                        timer = AttackRate;
                         ableToShot = true;
 
-                        Vector3 dir = firePos.InverseTransformPoint(detectTarget.target.transform.position);
-                        float angel = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+                        if (!meele)
+                        {
+                            Vector3 dir = firePos.InverseTransformPoint(detectTarget.target.transform.position);
+                            float angel = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
-                        GameObject newBullet = Instantiate(bullet, firePos.position, Quaternion.Euler(0f, 0f, angel + Random.Range(-spread, spread)));
-                        newBullet.GetComponent<Bullet>().damage = damage;
+                            GameObject newBullet = Instantiate(bullet, firePos.position, Quaternion.Euler(0f, 0f, angel + Random.Range(-spread, spread)));
+                            newBullet.GetComponent<Bullet>().damage = damage;
+                        }
+                        else
+                        {
+                            detectTarget.target.GetComponent<HitInterface>().TakeDamage(damage);
+                        }
                     }
                     else
                     {
