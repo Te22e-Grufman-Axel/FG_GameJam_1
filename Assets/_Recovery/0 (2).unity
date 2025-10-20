@@ -8392,7 +8392,7 @@ GameObject:
   - component: {fileID: 438455405}
   - component: {fileID: 438455404}
   m_Layer: 5
-  m_Name: ButtonCanvas
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10824,7 +10824,7 @@ GameObject:
   - component: {fileID: 1872203278}
   - component: {fileID: 1872203277}
   m_Layer: 0
-  m_Name: Button
+  m_Name: Square
   m_TagString: StopButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

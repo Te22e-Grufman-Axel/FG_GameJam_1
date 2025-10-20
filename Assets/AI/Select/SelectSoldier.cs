@@ -53,6 +53,11 @@ public class SelectSoldier : MonoBehaviour
                 {
                     selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
                 }
+                else if (hit.collider != null && hit.collider.gameObject.tag == "StopButton")
+                {
+                    selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
+                    hit.collider.gameObject.GetComponent<StopTimerInteface>().Stop(selectedSoldier.transform);
+                }
                 else if (selectedSoldier != null)
                 {
                     selectedSoldier.GetComponent<Target>().setTargetPos(mouseRay.origin);
