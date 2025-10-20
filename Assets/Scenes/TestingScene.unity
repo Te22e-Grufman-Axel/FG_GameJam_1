@@ -7959,8 +7959,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 256d0d1840aab6746ba6d0795a188ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  animator: {fileID: 0}
-  health: 10000
+  animator: {fileID: 794526749}
+  health: 10
   Dead: 0
 --- !u!58 &147527749
 CircleCollider2D:
@@ -8012,10 +8012,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Shoting
   detectTarget: {fileID: 147527751}
   aIPath: {fileID: 147527754}
-  animator: {fileID: 0}
-  meele: 1
+  animator: {fileID: 794526749}
+  meele: 0
   damage: 2
-  AttackRate: 0.5
+  AttackRate: 0.4
   spread: 5
   range: 2
   ableToShot: 0
@@ -8384,6 +8384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 794526747}
   - component: {fileID: 794526748}
+  - component: {fileID: 794526749}
   m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
@@ -8450,9 +8451,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 64337709
+  m_SortingLayerID: 223515979
   m_SortingLayer: 3
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 1805822069, guid: 4c4c5f6cfc335854e963c417145b22a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8464,6 +8465,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &794526749
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794526746}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1e3d47c988e947840b465ec3da7e900f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &851051068
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9459,7 +9482,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 64337709
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: 902424093, guid: 5845370d89b51ab4ba3683ad2d135dab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -10670,7 +10693,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903237727}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5452bcb73d53f804595e9db70c54dfa8, type: 3}
   m_Name: 
