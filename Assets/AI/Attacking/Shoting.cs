@@ -16,13 +16,21 @@ public class Shoting : MonoBehaviour
     [Space]
 
     [SerializeField] private bool meele;
+    [SerializeField] private bool shooting;
+    [Space]
+
     [SerializeField] private float damage;
-    [SerializeField] private float AttackRate;
+    [SerializeField] private float attackRate;
     [SerializeField] private float spread;
     [SerializeField] private float range;
     [Space]
 
-    public bool ableToShot = false;
+    [SerializeField] private float meeleDamage;
+    [SerializeField] private float meeleAttackRate;
+    [SerializeField] private float meeleRange;
+    [Space]
+
+    public bool ableToAttack = false;
 
     private float timer;
 
@@ -51,35 +59,20 @@ public class Shoting : MonoBehaviour
 
                     if (dist <= range)
                     {
-                        timer = AttackRate;
-                        ableToShot = true;
+                        ableToAttack = true;
 
-                        if (!meele)
+                        if(meele && dist <= meeleRange)
                         {
-                            Vector3 dir = firePos.InverseTransformPoint(detectTarget.target.transform.position);
-                            float angel = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-
-                            GameObject newBullet = Instantiate(bullet, firePos.position, Quaternion.Euler(0f, 0f, angel + Random.Range(-spread, spread)));
-                            newBullet.GetComponent<Bullet>().damage = damage;
-
-                            if (soldier)
-                            {
-                                AlarmNerbyEnemys();
-                            }
+                            Meele();
                         }
-                        else
+                        else if (shooting)
                         {
-                            detectTarget.target.GetComponent<HitInterface>().TakeDamage(damage);
-                        }
-
-                        if (animator != null)
-                        {
-                            animator.SetBool("Attacking", true);
+                            Shot();
                         }
                     }
                     else
                     {
-                        ableToShot = false;
+                        ableToAttack = false;
 
                         if (animator != null)
                         {
@@ -89,7 +82,7 @@ public class Shoting : MonoBehaviour
                 }
                 else
                 {
-                    ableToShot = false;
+                    ableToAttack = false;
 
                     if (animator != null)
                     {
@@ -99,7 +92,7 @@ public class Shoting : MonoBehaviour
             }
             else
             {
-                ableToShot = false;
+                ableToAttack = false;
 
                 if (animator != null)
                 {
@@ -126,7 +119,7 @@ public class Shoting : MonoBehaviour
 
     private void FlipSprite()
     {
-        if (ableToShot)
+        if (ableToAttack)
         {
             if (detectTarget.target != null)
             {
@@ -164,5 +157,38 @@ public class Shoting : MonoBehaviour
         {
             collider.gameObject.GetComponent<DetectShot>().Alarm(firePos.position);
         }
+    }
+
+    private void Shot()
+    {
+        if (animator != null)
+        {
+            animator.SetBool("Meele", false);
+            animator.SetBool("Attacking", true);
+        }
+
+        timer = attackRate;
+        Vector3 dir = firePos.InverseTransformPoint(detectTarget.target.transform.position);
+        float angel = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+
+        GameObject newBullet = Instantiate(bullet, firePos.position, Quaternion.Euler(0f, 0f, angel + Random.Range(-spread, spread)));
+        newBullet.GetComponent<Bullet>().damage = damage;
+
+        if (soldier)
+        {
+            AlarmNerbyEnemys();
+        }
+    }
+
+    private void Meele()
+    {
+        if (animator != null)
+        {
+            animator.SetBool("Meele", true);
+            animator.SetBool("Attacking", true);
+        }
+        
+        timer = meeleAttackRate;
+        detectTarget.target.GetComponent<HitInterface>().TakeDamage(damage);
     }
 }

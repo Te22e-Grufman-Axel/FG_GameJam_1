@@ -25,7 +25,11 @@ public class AITarget : MonoBehaviour
 
     private void Awake()
     {
-        patrolList = GetWaypoints();
+        if(Waypoints != null)
+        {
+            patrolList = GetWaypoints();
+        }
+        
         target = Instantiate(targetPrefab, this.transform.position, Quaternion.identity).transform;
     }
 
@@ -37,7 +41,7 @@ public class AITarget : MonoBehaviour
 
             destinationSetter.target = detectTarget.target.transform;
 
-            aIPath.canMove = !shoting.ableToShot;
+            aIPath.canMove = !shoting.ableToAttack;
         }
         else
         {

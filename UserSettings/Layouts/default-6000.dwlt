@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Console
   m_RootView: {fileID: 10}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 105
+  controlID: 169
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_MinSize: {x: 500, y: 100}
   m_MaxSize: {x: 40480, y: 16192}
   vertical: 0
-  controlID: 78
+  controlID: 75
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -328,7 +328,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 1
-  controlID: 79
+  controlID: 76
   draggingID: 0
 --- !u!114 &14
 MonoBehaviour:
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 50}
   m_MaxSize: {x: 32384, y: 8096}
   vertical: 0
-  controlID: 80
+  controlID: 77
   draggingID: 0
 --- !u!114 &15
 MonoBehaviour:
@@ -532,7 +532,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Timer
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -542,16 +542,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 81
   m_LastFolders:
-  - Assets
+  - Assets/Timer
   m_LastFoldersGridSize: 81
   m_LastProjectPath: A:\my games\FG_GameJam_1
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 2.6491227}
-    m_SelectedIDs: 38bd0000
-    m_LastClickedID: 48440
-    m_ExpandedIDs: 0000000006c1000008c10000
+    m_SelectedIDs: a8c10000
+    m_LastClickedID: 49576
+    m_ExpandedIDs: 0000000084bf000086bf0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -580,7 +580,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000006c1000008c10000
+    m_ExpandedIDs: 0000000084bf000086bf0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -677,7 +677,7 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 184
+    m_CachedPref: 151
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
@@ -728,7 +728,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: aac5feff00fbffff90ba0000
+      m_ExpandedIDs: dafaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1236,7 +1236,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 833.6746, y: 467.30017, z: -10.813311}
     speed: 2
-    m_Value: {x: 0.51383275, y: 1.0509547, z: -0.072919406}
+    m_Value: {x: 833.6746, y: 467.30017, z: -10.813311}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1288,7 +1288,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 1360.2126
     speed: 2
-    m_Value: 8.006088
+    m_Value: 1360.2126
   m_Ortho:
     m_Target: 1
     speed: 2
