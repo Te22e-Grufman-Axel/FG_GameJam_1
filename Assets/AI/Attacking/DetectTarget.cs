@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DetectTarget : MonoBehaviour
+public class DetectTarget : MonoBehaviour, DetectShot
 {
     [SerializeField] private float range;
 
@@ -102,5 +102,16 @@ public class DetectTarget : MonoBehaviour
         }
 
         return true;
+    }
+
+    void DetectShot.Alarm(Vector3 pos)
+    {
+        if (target == null)
+        {
+            if (aiTarget != null)
+            {
+                aiTarget.GetToLastSeenPos(pos);
+            }
+        }
     }
 }

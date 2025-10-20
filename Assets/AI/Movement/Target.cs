@@ -4,7 +4,6 @@ using Pathfinding;
 public class Target : MonoBehaviour
 {
     [SerializeField] private AIDestinationSetter destinationSetter;
-    [SerializeField] private AIPath aIPath;
     [SerializeField] private GameObject targetPrefab;
     private Transform target;
 
@@ -12,11 +11,6 @@ public class Target : MonoBehaviour
     {
         target = Instantiate(targetPrefab, this.transform.position, Quaternion.identity).transform;
         destinationSetter.target = target;
-    }
-
-    private void Update()
-    {
-        
     }
 
     public void setTargetPos(Vector3 newPos)

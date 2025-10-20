@@ -8,12 +8,19 @@ public class Shoting : MonoBehaviour
     [SerializeField] private AIPath aIPath;
 
     [SerializeField] private Animator animator;
+    [Space]
+
+    [SerializeField] private bool soldier = false;
+    [SerializeField] private float alarmRadius = 10f;
+    [SerializeField] private LayerMask alarmLayerMask;
+    [Space]
 
     [SerializeField] private bool meele;
     [SerializeField] private float damage;
     [SerializeField] private float AttackRate;
     [SerializeField] private float spread;
     [SerializeField] private float range;
+    [Space]
 
     public bool ableToShot = false;
 
@@ -54,6 +61,11 @@ public class Shoting : MonoBehaviour
 
                             GameObject newBullet = Instantiate(bullet, firePos.position, Quaternion.Euler(0f, 0f, angel + Random.Range(-spread, spread)));
                             newBullet.GetComponent<Bullet>().damage = damage;
+
+                            if (soldier)
+                            {
+                                AlarmNerbyEnemys();
+                            }
                         }
                         else
                         {
@@ -116,16 +128,19 @@ public class Shoting : MonoBehaviour
     {
         if (ableToShot)
         {
-            Vector3 dir = firePos.position - detectTarget.target.transform.position;
-            dir.Normalize();
+            if (detectTarget.target != null)
+            {
+                Vector3 dir = firePos.position - detectTarget.target.transform.position;
+                dir.Normalize();
 
-            if (dir.x > 0f)
-            {
-                spriteRenderer.flipX = true;
-            }
-            else if (dir.x < 0f)
-            {
-                spriteRenderer.flipX = false;
+                if (dir.x > 0f)
+                {
+                    spriteRenderer.flipX = true;
+                }
+                else if (dir.x < 0f)
+                {
+                    spriteRenderer.flipX = false;
+                }
             }
         }
         else
@@ -138,6 +153,16 @@ public class Shoting : MonoBehaviour
             {
                 spriteRenderer.flipX = true;
             }
+        }
+    }
+
+    private void AlarmNerbyEnemys()
+    {
+        Collider2D[] allColliders = Physics2D.OverlapCircleAll(firePos.position, alarmRadius, alarmLayerMask);
+
+        foreach(Collider2D collider in allColliders)
+        {
+            collider.gameObject.GetComponent<DetectShot>().Alarm(firePos.position);
         }
     }
 }
