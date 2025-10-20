@@ -1,9 +1,13 @@
+using Pathfinding;
 using UnityEngine;
 
 public class Shoting : MonoBehaviour
 {
     [SerializeField] private DetectTarget detectTarget;
 
+    [SerializeField] private AIPath aIPath;
+
+    [SerializeField] private Animator animator;
 
     [SerializeField] private bool meele;
     [SerializeField] private float damage;
@@ -18,6 +22,13 @@ public class Shoting : MonoBehaviour
     [SerializeField] private GameObject bullet;
 
     [SerializeField] private Transform firePos;
+
+    private SpriteRenderer spriteRenderer;
+
+    private void Awake()
+    {
+        spriteRenderer = this.transform.GetChild(0).GetComponent<SpriteRenderer>();
+    }
 
     void Update()
     {
@@ -48,22 +59,85 @@ public class Shoting : MonoBehaviour
                         {
                             detectTarget.target.GetComponent<HitInterface>().TakeDamage(damage);
                         }
+
+                        if (animator != null)
+                        {
+                            animator.SetBool("Attacking", true);
+                        }
                     }
                     else
                     {
                         ableToShot = false;
+
+                        if (animator != null)
+                        {
+                            animator.SetBool("Attacking", false);
+                        }
                     }
                 }
                 else
                 {
                     ableToShot = false;
+
+                    if (animator != null)
+                    {
+                        animator.SetBool("Attacking", false);
+                    }
                 }
             }
             else
             {
                 ableToShot = false;
-            }
 
+                if (animator != null)
+                {
+                    animator.SetBool("Attacking", false);
+                }
+            }
+        }
+
+
+        FlipSprite();
+
+        if (animator != null)
+        {
+            if (aIPath.velocity.x > 0f || aIPath.velocity.x < 0f)
+            {
+                animator.SetBool("Walking", true);
+            }
+            else
+            {
+                animator.SetBool("Walking", false);
+            }
+        }
+    }
+
+    private void FlipSprite()
+    {
+        if (ableToShot)
+        {
+            Vector3 dir = firePos.position - detectTarget.target.transform.position;
+            dir.Normalize();
+
+            if (dir.x > 0f)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else if (dir.x < 0f)
+            {
+                spriteRenderer.flipX = false;
+            }
+        }
+        else
+        {
+            if (aIPath.velocity.x > 0f)
+            {
+                spriteRenderer.flipX = false;
+            }
+            else if (aIPath.velocity.x < 0f)
+            {
+                spriteRenderer.flipX = true;
+            }
         }
     }
 }
