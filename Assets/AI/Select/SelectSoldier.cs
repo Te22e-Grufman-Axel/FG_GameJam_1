@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class SelectSoldier : MonoBehaviour
@@ -49,18 +48,26 @@ public class SelectSoldier : MonoBehaviour
                 {
                     selectedSoldier = hit.collider.gameObject;
                 }
-                else if (hit.collider != null && hit.collider.gameObject.tag == "Enemy")
-                {
-                    selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
-                }
-                else if (hit.collider != null && hit.collider.gameObject.tag == "StopButton")
-                {
-                    selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
-                    hit.collider.gameObject.GetComponent<StopTimerInteface>().Stop(selectedSoldier.transform);
-                }
                 else if (selectedSoldier != null)
                 {
-                    selectedSoldier.GetComponent<Target>().setTargetPos(mouseRay.origin);
+                    if (hit.collider != null && hit.collider.gameObject.tag == "Enemy")
+                    {
+                        selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
+                    }
+                    else if (hit.collider != null && hit.collider.gameObject.tag == "StopButton")
+                    {
+                        selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
+                        hit.collider.gameObject.GetComponent<StopTimerInteface>().Stop(selectedSoldier.transform);
+                    }
+                    else if (hit.collider != null && hit.collider.gameObject.tag == "HealthPack")
+                    {
+                        selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
+                        hit.collider.gameObject.GetComponent<HealthPackInterface>().HealthPack(selectedSoldier.transform);
+                    }
+                    else
+                    {
+                        selectedSoldier.GetComponent<Target>().setTargetPos(mouseRay.origin);
+                    }
                 }
             }
         }

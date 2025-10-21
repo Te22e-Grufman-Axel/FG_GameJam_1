@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Soldier
   - Enemy
+  - StopButton
+  - HealthPack
   layers:
   - Default
   - TransparentFX
@@ -54,6 +56,9 @@ TagManager:
     locked: 0
   - name: Soldiers
     uniqueID: 64337709
+    locked: 0
+  - name: HealthBars
+    uniqueID: 3868825969
     locked: 0
   m_RenderingLayers:
   - Default
