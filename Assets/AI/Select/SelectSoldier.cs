@@ -68,6 +68,8 @@ public class SelectSoldier : MonoBehaviour
                     {
                         selectedSoldier.GetComponent<Target>().setTargetPos(mouseRay.origin);
                     }
+
+                    selectedSoldier.GetComponent<DrawPath>().drawNewPath = true;
                 }
             }
         }
