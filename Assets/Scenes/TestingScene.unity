@@ -8300,6 +8300,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8713803619340017159, guid: 0b18be7b3806e5344817e012bd5d42b0, type: 3}
+      propertyPath: meele
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8713803619340017159, guid: 0b18be7b3806e5344817e012bd5d42b0, type: 3}
+      propertyPath: shooting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210508122593657805, guid: 0b18be7b3806e5344817e012bd5d42b0, type: 3}
+      propertyPath: health
+      value: 500000000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8352,6 +8364,14 @@ PrefabInstance:
     - target: {fileID: 3460456354273341082, guid: 8ad71da9176f06c498356a0a4b229afe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066275120842223223, guid: 8ad71da9176f06c498356a0a4b229afe, type: 3}
+      propertyPath: meele
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6066275120842223223, guid: 8ad71da9176f06c498356a0a4b229afe, type: 3}
+      propertyPath: shooting
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8129182291315430134, guid: 8ad71da9176f06c498356a0a4b229afe, type: 3}
       propertyPath: m_Name
@@ -10760,6 +10780,7 @@ MonoBehaviour:
   meeleDamage: 0
   meeleAttackRate: 0
   meeleRange: 0
+  meeleHitEffect: {fileID: 0}
   ableToAttack: 0
   bullet: {fileID: 4364015895036261236, guid: 0e5837ee997b8b84bb8c7b8b9f9c3d36, type: 3}
   firePos: {fileID: 1502632384}

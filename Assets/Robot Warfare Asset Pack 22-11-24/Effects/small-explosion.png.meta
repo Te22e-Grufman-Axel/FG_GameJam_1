@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -97,67 +97,199 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: smoke_0
+      name: small-explosion_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 6
-        height: 6
+        x: 0
+        y: 0
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8cf7f67cf9072e180800000000000000
-      internalID: -9087577266532155448
+      spriteID: 5056a14108ccc2f4680a1f7b45c5237d
+      internalID: -1573834725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoke_1
+      name: small-explosion_1
       rect:
         serializedVersion: 2
-        x: 8
+        x: 24
         y: 0
-        width: 8
-        height: 8
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dc29d9f3a3444a0f0800000000000000
-      internalID: -1106684591460216115
+      spriteID: 98e773780315b0c45adfb642b85813a5
+      internalID: -2001634081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoke_2
+      name: small-explosion_2
       rect:
         serializedVersion: 2
-        x: 15
+        x: 48
         y: 0
-        width: 49
-        height: 8
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ad4a5f20146d7fca0800000000000000
-      internalID: -5983078005227543334
+      spriteID: f8913da971ece944f98cbc8efffaaa6d
+      internalID: 1567655648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small-explosion_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4271cda34751ac4e993402b70b2378b
+      internalID: -1934656885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small-explosion_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a302f4a2c390b942bf179f3f5ad6717
+      internalID: -1352547276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small-explosion_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5ad1eda54b0db43ac816845b0d6071
+      internalID: -1438398499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small-explosion_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216236d0feea95841b7507560f2c21d0
+      internalID: -1216562112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small-explosion_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4356096cb50024eac10a7c18dcac84
+      internalID: -1592169879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: small-explosion_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 019c6a6294b544843b152871a32c4292
+      internalID: -1800188604
       vertices: []
       indices: 
       edges: []
@@ -174,11 +306,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":24.0,"y":24.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      smoke_0: -9087577266532155448
-      smoke_1: -1106684591460216115
-      smoke_2: -5983078005227543334
+      small-explosion_0: -1573834725
+      small-explosion_1: -2001634081
+      small-explosion_2: 1567655648
+      small-explosion_3: -1934656885
+      small-explosion_4: -1352547276
+      small-explosion_5: -1438398499
+      small-explosion_6: -1216562112
+      small-explosion_7: -1592169879
+      small-explosion_8: -1800188604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

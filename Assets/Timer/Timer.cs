@@ -25,6 +25,7 @@ public class Timer : MonoBehaviour, StopTimerInteface
                 if (dist <= DeactivateDistance)
                 {
                     timer = false;
+                    GetComponent<CircleCollider2D>().enabled = false;
                 }
             }
             else

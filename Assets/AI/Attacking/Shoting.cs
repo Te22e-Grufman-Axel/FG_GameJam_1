@@ -28,6 +28,7 @@ public class Shoting : MonoBehaviour
     [SerializeField] private float meeleDamage;
     [SerializeField] private float meeleAttackRate;
     [SerializeField] private float meeleRange;
+    [SerializeField] private GameObject meeleHitEffect;
     [Space]
 
     public bool ableToAttack = false;
@@ -190,5 +191,12 @@ public class Shoting : MonoBehaviour
         
         timer = meeleAttackRate;
         detectTarget.target.GetComponent<HitInterface>().TakeDamage(damage);
+        SpawnHitEffect();
+    }
+
+    private void SpawnHitEffect()
+    {
+        GameObject hitEffect = Instantiate(meeleHitEffect, new Vector3(detectTarget.target.transform.position.x, detectTarget.target.transform.position.y, 0f), Quaternion.identity);
+        Destroy(hitEffect, 1f);
     }
 }

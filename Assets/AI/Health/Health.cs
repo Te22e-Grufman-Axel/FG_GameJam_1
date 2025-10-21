@@ -43,7 +43,7 @@ public class Health : MonoBehaviour, HitInterface, IncreaseHealth
 
         if (health <= 0f)
         {
-            Dead = false;
+            Dead = true;
             health = 0f;
 
             if (animator != null)

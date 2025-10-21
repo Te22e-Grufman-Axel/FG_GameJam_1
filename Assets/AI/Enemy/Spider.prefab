@@ -309,6 +309,7 @@ MonoBehaviour:
   meeleDamage: 4
   meeleAttackRate: 0.4
   meeleRange: 1.5
+  meeleHitEffect: {fileID: 1777232367095550343, guid: b4e4fd11db6fdab499425f6c11d86d0e, type: 3}
   ableToAttack: 0
   bullet: {fileID: 4364015895036261236, guid: 7c35210fb709b9b4eb72317bb62ae3cc, type: 3}
   firePos: {fileID: 6372627336745577444}
