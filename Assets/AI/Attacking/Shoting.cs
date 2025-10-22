@@ -48,6 +48,8 @@ public class Shoting : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale < 1) { return; }
+
         timer -= Time.deltaTime;
 
         if (timer <= 0)

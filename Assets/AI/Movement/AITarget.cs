@@ -35,6 +35,8 @@ public class AITarget : MonoBehaviour
 
     private void Update()
     {
+        if(Time.timeScale < 1) { return; }
+
         if (detectTarget.target != null)
         {
             currentlyPatroling = false;

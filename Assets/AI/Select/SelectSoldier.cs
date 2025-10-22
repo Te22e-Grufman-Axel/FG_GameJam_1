@@ -8,8 +8,11 @@ public class SelectSoldier : MonoBehaviour
     [SerializeField] private InputActionAsset inputActions;
     private InputAction selectAction;
     private InputAction mousePosAction;
+    private InputAction pauseAction;
 
     private bool pressed = false;
+
+    [SerializeField] private GameObject pauseMenue;
 
     private void OnEnable()
     {
@@ -25,10 +28,27 @@ public class SelectSoldier : MonoBehaviour
     {
         selectAction = InputSystem.actions.FindAction("Attack");
         mousePosAction = InputSystem.actions.FindAction("MousePos");
+        pauseAction = InputSystem.actions.FindAction("Pause");
     }
 
     void Update()
     {
+        if (pauseAction.ReadValue<float>() == 1f)
+        {
+            if (Time.timeScale > 0)
+            {
+                Time.timeScale = 0f;
+                pauseMenue.SetActive(true);
+            }
+            else
+            {
+                Time.timeScale = 1f;
+                pauseMenue.SetActive(false);
+            }
+        }
+
+        if (Time.timeScale < 1) { return; }
+
         float leftClick = selectAction.ReadValue<float>();
 
         if (leftClick == 1)

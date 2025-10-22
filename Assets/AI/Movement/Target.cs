@@ -24,6 +24,8 @@ public class Target : MonoBehaviour
 
     private void Update()
     {
+        if (Time.timeScale < 1) { return; }
+
         if (aIDestinationSetter.target != null)
         {
             if (aIDestinationSetter.target.gameObject.tag == "Enemy")
