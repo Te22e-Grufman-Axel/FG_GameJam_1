@@ -65,9 +65,17 @@ public class Shoting : MonoBehaviour
                             ableToAttack = true;
                             Meele();
                         }
-                        else
+                        else if (shooting)
                         {
-                            NotAttacking();
+                            if (dist <= range)
+                            {
+                                ableToAttack = true;
+                                Shot();
+                            }
+                            else
+                            {
+                                NotAttacking();
+                            }
                         }
                     }
                     else if (shooting)
