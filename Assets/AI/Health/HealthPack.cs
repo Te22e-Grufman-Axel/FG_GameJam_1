@@ -13,7 +13,7 @@ public class HealthPack : MonoBehaviour, HealthPackInterface
     {
         if (aIDestinationSetter != null)
         {
-            if (aIDestinationSetter.target = this.transform)
+            if (aIDestinationSetter.target == this.transform)
             {
                 float dist = Vector2.Distance(aIDestinationSetter.transform.position, this.transform.position);
 

@@ -25,19 +25,6 @@ public class DrawPath : MonoBehaviour
 
     void Update()
     {
-        /*
-        float distToTarget = Vector2.Distance(aIDestinationSetter.target.position, this.transform.position);
-
-        if (aIDestinationSetter.target != null || distToTarget >= 1)
-        {
-            InvokeRepeating("GenerateGraphics", 0f, 0.2f);
-        }
-        else
-        {
-            CancelInvoke("GenerateGraphics");
-        }
-        */
-
         if(path != aiPath.GetPath())
         {
             GenerateGraphics();

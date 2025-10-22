@@ -1,4 +1,5 @@
 using UnityEngine;
+using Pathfinding;
 
 public class DetectTarget : MonoBehaviour, DetectShot
 {
@@ -14,13 +15,33 @@ public class DetectTarget : MonoBehaviour, DetectShot
 
     private AITarget aiTarget;
 
+    [SerializeField] private bool soldier = false;
+    private AIDestinationSetter aIDestinationSetter;
+
     private void Awake()
     {
         aiTarget = GetComponent<AITarget>();
+        aIDestinationSetter = GetComponent<AIDestinationSetter>();
     }
 
     void Update()
     {
+        if (soldier)
+        {
+            if (aIDestinationSetter.target != null)
+            {
+                if (aIDestinationSetter.target.gameObject.tag == "Enemy")
+                {
+                    if(aIDestinationSetter.target != target)
+                    {
+                        target = aIDestinationSetter.target.gameObject;
+                        targetInView = CheckIfInView(target.transform);
+                        return;
+                    }
+                }
+            }
+        }
+
         if (target != null)
         {
             float dist = Vector2.Distance(target.transform.position, this.transform.position);

@@ -26,6 +26,19 @@ public class Bullet : MonoBehaviour
             return;
         }
 
+        if (collision.gameObject.tag.Contains("Props"))
+        {
+            int r = Random.Range(0, 100);
+            Debug.Log(r);
+            if(r < 50)
+            {
+                hasCollided = true;
+                SpawnHitEffect(HitWall);
+                return;
+            }
+            return;
+        }
+
         if (collision.gameObject.tag.Contains(ignoreTag))
         {
             return;

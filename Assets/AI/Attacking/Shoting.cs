@@ -58,47 +58,43 @@ public class Shoting : MonoBehaviour
                 {
                     float dist = Vector2.Distance(detectTarget.target.transform.position, this.transform.position);
 
-                    if (dist <= range)
+                    if (meele)
                     {
-                        ableToAttack = true;
-
-                        if(meele && dist <= meeleRange)
+                        if (dist <= meeleRange)
                         {
+                            ableToAttack = true;
                             Meele();
                         }
-                        else if (shooting)
+                        else
                         {
+                            NotAttacking();
+                        }
+                    }
+                    else if (shooting)
+                    {
+                        if (dist <= range)
+                        {
+                            ableToAttack = true;
                             Shot();
+                        }
+                        else
+                        {
+                            NotAttacking();
                         }
                     }
                     else
                     {
-                        ableToAttack = false;
-
-                        if (animator != null)
-                        {
-                            animator.SetBool("Attacking", false);
-                        }
+                        NotAttacking();
                     }
                 }
                 else
                 {
-                    ableToAttack = false;
-
-                    if (animator != null)
-                    {
-                        animator.SetBool("Attacking", false);
-                    }
+                    NotAttacking();
                 }
             }
             else
             {
-                ableToAttack = false;
-
-                if (animator != null)
-                {
-                    animator.SetBool("Attacking", false);
-                }
+                NotAttacking();
             }
         }
 
@@ -115,6 +111,16 @@ public class Shoting : MonoBehaviour
             {
                 animator.SetBool("Walking", false);
             }
+        }
+    }
+
+    private void NotAttacking()
+    {
+        ableToAttack = false;
+
+        if (animator != null)
+        {
+            animator.SetBool("Attacking", false);
         }
     }
 
