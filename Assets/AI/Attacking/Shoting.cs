@@ -77,6 +77,10 @@ public class Shoting : MonoBehaviour
                                 NotAttacking();
                             }
                         }
+                        else
+                        {
+                            NotAttacking();
+                        }
                     }
                     else if (shooting)
                     {
