@@ -1,6 +1,5 @@
 using UnityEngine;
 using Pathfinding;
-using static UnityEditor.PlayerSettings;
 using System.Collections.Generic;
 
 public class DrawPath : MonoBehaviour
