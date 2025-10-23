@@ -10,9 +10,8 @@ public class SelectSoldier : MonoBehaviour
     private InputAction mousePosAction;
     private InputAction pauseAction;
 
-    private bool pressed = false;
-
     [SerializeField] private GameObject pauseMenue;
+    private bool escPressed = false;
 
     private void OnEnable()
     {
@@ -33,7 +32,7 @@ public class SelectSoldier : MonoBehaviour
 
     void Update()
     {
-        if (pauseAction.ReadValue<float>() == 1f)
+        if (pauseAction.WasPressedThisFrame())
         {
             if (Time.timeScale > 0)
             {
@@ -49,64 +48,53 @@ public class SelectSoldier : MonoBehaviour
 
         if (Time.timeScale < 1) { return; }
 
-        float leftClick = selectAction.ReadValue<float>();
-
-        if (leftClick == 1)
+        if (selectAction.WasPressedThisFrame())
         {
-            if(pressed == false)
+            Vector3 mousePosition = mousePosAction.ReadValue<Vector2>();
+
+            Ray mouseRay = Camera.main.ScreenPointToRay(mousePosition);
+
+            RaycastHit2D hit = Physics2D.Raycast(mouseRay.origin, mouseRay.direction);
+
+            //checks if is pressing a soldier if it is then select that soldier else if selected soldier is not null set that pressed location as target
+            if (hit.collider != null && hit.collider.gameObject.tag == "Soldier")
             {
-                pressed = true;
-
-                Vector3 mousePosition = mousePosAction.ReadValue<Vector2>();
-
-                Ray mouseRay = Camera.main.ScreenPointToRay(mousePosition);
-
-                RaycastHit2D hit = Physics2D.Raycast(mouseRay.origin, mouseRay.direction);
-
-                //checks if is pressing a soldier if it is then select that soldier else if selected soldier is not null set that pressed location as target
-                if (hit.collider != null && hit.collider.gameObject.tag == "Soldier")
+                if (selectedSoldier != null)
                 {
-                    if(selectedSoldier != null)
-                    {
-                        selectedSoldier.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = false;
-                    }
-
-                    selectedSoldier = hit.collider.gameObject;
-                    selectedSoldier.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = true;
+                    selectedSoldier.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = false;
                 }
-                else if (selectedSoldier != null)
-                {
-                    if (hit.collider != null && hit.collider.gameObject.tag == "Enemy")
-                    {
-                        selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
-                    }
-                    else if (hit.collider != null && hit.collider.gameObject.tag == "StopButton")
-                    {
-                        selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
-                        hit.collider.gameObject.GetComponent<StopTimerInteface>().Stop(selectedSoldier.transform);
-                    }
-                    else if (hit.collider != null && hit.collider.gameObject.tag == "HealthPack")
-                    {
-                        selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
-                        hit.collider.gameObject.GetComponent<HealthPackInterface>().HealthPack(selectedSoldier.transform);
-                    }
-                    else if (hit.collider != null && hit.collider.gameObject.tag == "Captured")
-                    {
-                        selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
-                        hit.collider.gameObject.GetComponent<CapturedSoldierInterface>().Rescue(selectedSoldier.transform);
-                    }
-                    else
-                    {
-                        selectedSoldier.GetComponent<Target>().setTargetPos(mouseRay.origin);
-                    }
 
-                    selectedSoldier.GetComponent<DrawPath>().drawNewPath = true;
-                }
+                selectedSoldier = hit.collider.gameObject;
+                selectedSoldier.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = true;
             }
-        }
-        else if(leftClick == 0)
-        {
-            pressed = false;
+            else if (selectedSoldier != null)
+            {
+                if (hit.collider != null && hit.collider.gameObject.tag == "Enemy")
+                {
+                    selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
+                }
+                else if (hit.collider != null && hit.collider.gameObject.tag == "StopButton")
+                {
+                    selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
+                    hit.collider.gameObject.GetComponent<StopTimerInteface>().Stop(selectedSoldier.transform);
+                }
+                else if (hit.collider != null && hit.collider.gameObject.tag == "HealthPack")
+                {
+                    selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
+                    hit.collider.gameObject.GetComponent<HealthPackInterface>().HealthPack(selectedSoldier.transform);
+                }
+                else if (hit.collider != null && hit.collider.gameObject.tag == "Captured")
+                {
+                    selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
+                    hit.collider.gameObject.GetComponent<CapturedSoldierInterface>().Rescue(selectedSoldier.transform);
+                }
+                else
+                {
+                    selectedSoldier.GetComponent<Target>().setTargetPos(mouseRay.origin);
+                }
+
+                selectedSoldier.GetComponent<DrawPath>().drawNewPath = true;
+            }
         }
     }
 }

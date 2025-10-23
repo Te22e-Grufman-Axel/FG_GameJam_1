@@ -59,6 +59,9 @@ TagManager:
   - name: Soldiers
     uniqueID: 64337709
     locked: 0
+  - name: Lamposts
+    uniqueID: 865389787
+    locked: 0
   - name: HealthBars
     uniqueID: 3868825969
     locked: 0

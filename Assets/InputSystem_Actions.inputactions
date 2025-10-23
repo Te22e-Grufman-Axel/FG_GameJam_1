@@ -102,8 +102,8 @@
                     "id": "7661eeb1-feba-41bf-92e6-b8c3f3de3961",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "Tap",
-                    "initialStateCheck": false
+                    "interactions": "Press",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
