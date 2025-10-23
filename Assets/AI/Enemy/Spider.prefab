@@ -280,6 +280,7 @@ MonoBehaviour:
   target: {fileID: 0}
   targetInView: 0
   LostTarget: 0
+  soldier: 0
 --- !u!114 &8713803619340017159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,7 +365,7 @@ MonoBehaviour:
   soldier: 0
   healthBar: {fileID: 6492125798461515398}
   animator: {fileID: 6540579030358948750}
-  health: 50
+  health: 70
   Dead: 0
 --- !u!1001 &4940567443203833180
 PrefabInstance:
