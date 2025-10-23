@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -97,67 +97,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: smoke_0
+      name: selection-circles_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 6
-        height: 6
+        x: 0
+        y: 96
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8cf7f67cf9072e180800000000000000
-      internalID: -9087577266532155448
+      spriteID: 693a157359964364ebea78cb9553571f
+      internalID: -2109949404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoke_1
+      name: selection-circles_1
       rect:
         serializedVersion: 2
-        x: 8
-        y: 0
-        width: 8
-        height: 8
+        x: 24
+        y: 96
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dc29d9f3a3444a0f0800000000000000
-      internalID: -1106684591460216115
+      spriteID: 508f47033f034724984e8062ef04fc90
+      internalID: -1641936807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smoke_2
+      name: selection-circles_2
       rect:
         serializedVersion: 2
-        x: 15
-        y: 0
-        width: 49
-        height: 8
+        x: 0
+        y: 72
+        width: 24
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ad4a5f20146d7fca0800000000000000
-      internalID: -5983078005227543334
+      spriteID: 29bf6c2fe1cdb8a4cbad442b4dcab5d0
+      internalID: 102746796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selection-circles_3
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 72
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf37c29b6ecf1e42ab47d2191e5c012
+      internalID: 1378852953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selection-circles_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3ae8523280b9fa4d8337fbec93a8d7d
+      internalID: 931245081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selection-circles_5
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 48
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b88f218e1f68f85418f262687d39122c
+      internalID: 1097802476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selection-circles_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab4cb4334e1c124f8a14736f259a193
+      internalID: -465884604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selection-circles_7
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 24
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f75f4196696f664469f448a0ffee8576
+      internalID: -855744588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selection-circles_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be8a1797abd61f43a6b5e8e693a230a
+      internalID: 14493419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selection-circles_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e914731caaa1ae541b72017d36de6f73
+      internalID: 1886754890
       vertices: []
       indices: 
       edges: []
@@ -174,11 +328,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":24.0,"y":24.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      smoke_0: -9087577266532155448
-      smoke_1: -1106684591460216115
-      smoke_2: -5983078005227543334
+      selection-circles_0: -2109949404
+      selection-circles_1: -1641936807
+      selection-circles_2: 102746796
+      selection-circles_3: 1378852953
+      selection-circles_4: 931245081
+      selection-circles_5: 1097802476
+      selection-circles_6: -465884604
+      selection-circles_7: -855744588
+      selection-circles_8: 14493419
+      selection-circles_9: 1886754890
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -66,7 +66,13 @@ public class SelectSoldier : MonoBehaviour
                 //checks if is pressing a soldier if it is then select that soldier else if selected soldier is not null set that pressed location as target
                 if (hit.collider != null && hit.collider.gameObject.tag == "Soldier")
                 {
+                    if(selectedSoldier != null)
+                    {
+                        selectedSoldier.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = false;
+                    }
+
                     selectedSoldier = hit.collider.gameObject;
+                    selectedSoldier.transform.GetChild(2).GetComponent<SpriteRenderer>().enabled = true;
                 }
                 else if (selectedSoldier != null)
                 {
