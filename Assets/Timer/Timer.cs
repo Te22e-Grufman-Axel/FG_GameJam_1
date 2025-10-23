@@ -4,7 +4,8 @@ using TMPro;
 
 public class Timer : MonoBehaviour, StopTimerInteface
 {
-    [SerializeField] private Animator animator;
+    [SerializeField] private Animator buttonAnimator;
+    [SerializeField] private Animator shakeAnimator;
 
     [SerializeField] private TextMeshProUGUI text;
 
@@ -18,8 +19,6 @@ public class Timer : MonoBehaviour, StopTimerInteface
 
     private void Update()
     {
-        if (timer) { return; }
-
         if (aIDestinationSetter != null)
         {
             if (aIDestinationSetter.target == this.transform)
@@ -29,7 +28,7 @@ public class Timer : MonoBehaviour, StopTimerInteface
                 if (dist <= DeactivateDistance)
                 {
                     timer = false;
-                    animator.SetBool("Press", true);
+                    buttonAnimator.SetBool("Press", true);
                     GetComponent<CircleCollider2D>().enabled = false;
 
                     aIDestinationSetter.GetComponent<Target>().setTargetPos(aIDestinationSetter.transform.position);
@@ -49,6 +48,7 @@ public class Timer : MonoBehaviour, StopTimerInteface
             }
             else
             {
+                shakeAnimator.SetBool("TimeOut", true);
                 time = 0;
             }
         }
