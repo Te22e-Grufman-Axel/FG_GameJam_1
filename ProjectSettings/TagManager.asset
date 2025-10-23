@@ -62,5 +62,8 @@ TagManager:
   - name: HealthBars
     uniqueID: 3868825969
     locked: 0
+  - name: Explosion
+    uniqueID: 3654242431
+    locked: 0
   m_RenderingLayers:
   - Default

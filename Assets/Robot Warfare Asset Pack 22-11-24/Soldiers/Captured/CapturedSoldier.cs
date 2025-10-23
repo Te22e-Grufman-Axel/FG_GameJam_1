@@ -1,12 +1,14 @@
 using Pathfinding;
 using UnityEngine;
 
-public class CapturedSoldier : MonoBehaviour, CapturedSoldierInterface
+public class CapturedSoldier : MonoBehaviour, CapturedSoldierInterface, KillInterface
 {
     [SerializeField] private float distance = 1f;
     [SerializeField] GameObject soldierPrefab;
 
     private AIDestinationSetter aIDestinationSetter;
+
+    [SerializeField] private Animator animator;
 
     private void Update()
     {
@@ -35,5 +37,10 @@ public class CapturedSoldier : MonoBehaviour, CapturedSoldierInterface
     public void Rescue(Transform Soldier)
     {
         aIDestinationSetter = Soldier.gameObject.GetComponent<AIDestinationSetter>();
+    }
+
+    public void Kill()
+    {
+        animator.SetBool("Dead", true);
     }
 }

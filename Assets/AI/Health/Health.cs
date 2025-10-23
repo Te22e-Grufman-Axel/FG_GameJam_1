@@ -77,4 +77,18 @@ public class Health : MonoBehaviour, HitInterface, IncreaseHealth
 
         healthBar.localScale = new Vector3(procentage, 1f, 1f);
     }
+
+    public void Kill()
+    {
+        Dead = true;
+        health = 0f;
+
+        if (animator != null)
+        {
+            animator.SetBool("Dead", true);
+        }
+
+        this.transform.GetChild(0).transform.parent = null;
+        Destroy(this.gameObject);
+    }
 }

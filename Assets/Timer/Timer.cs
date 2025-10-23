@@ -1,6 +1,7 @@
 using UnityEngine;
 using Pathfinding;
 using TMPro;
+using System.Linq;
 
 public class Timer : MonoBehaviour, StopTimerInteface
 {
@@ -17,6 +18,7 @@ public class Timer : MonoBehaviour, StopTimerInteface
 
     private AIDestinationSetter aIDestinationSetter;
 
+    [System.Obsolete]
     private void Update()
     {
         if (aIDestinationSetter != null)
@@ -49,6 +51,7 @@ public class Timer : MonoBehaviour, StopTimerInteface
             else
             {
                 shakeAnimator.SetBool("TimeOut", true);
+                KillEverything();
                 time = 0;
             }
         }
@@ -59,5 +62,23 @@ public class Timer : MonoBehaviour, StopTimerInteface
     void StopTimerInteface.Stop(Transform Soldier)
     {
         aIDestinationSetter = Soldier.gameObject.GetComponent<AIDestinationSetter>();
+    }
+
+    [System.Obsolete]
+    private void KillEverything()
+    {
+        var objectsWithHealth = FindObjectsOfType<MonoBehaviour>().OfType<HitInterface>();
+
+        foreach(var go in objectsWithHealth)
+        {
+            go.Kill();
+        }
+
+        var objectsWithkill = FindObjectsOfType<MonoBehaviour>().OfType<KillInterface>();
+
+        foreach (var go in objectsWithkill)
+        {
+            go.Kill();
+        }
     }
 }

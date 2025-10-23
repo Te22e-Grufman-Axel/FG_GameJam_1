@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4963017448769963090}
   - component: {fileID: 9094850822319463035}
-  - component: {fileID: 2364495833455193458}
+  - component: {fileID: 843758329679398018}
   m_Layer: 0
   m_Name: sprite
   m_TagString: Untagged
@@ -91,7 +91,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &2364495833455193458
+--- !u!95 &843758329679398018
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -197,3 +197,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CapturedSoldier
   distance: 1
   soldierPrefab: {fileID: 2381158802086633879, guid: 1cbb2ae09855a1748bc33535c9b71db5, type: 3}
+  animator: {fileID: 843758329679398018}
