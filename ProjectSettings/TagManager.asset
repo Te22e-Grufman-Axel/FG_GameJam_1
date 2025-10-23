@@ -9,6 +9,7 @@ TagManager:
   - StopButton
   - HealthPack
   - Props
+  - Captured
   layers:
   - Default
   - TransparentFX

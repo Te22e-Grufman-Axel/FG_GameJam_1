@@ -18,6 +18,8 @@ public class Timer : MonoBehaviour, StopTimerInteface
 
     private void Update()
     {
+        if (timer) { return; }
+
         if (aIDestinationSetter != null)
         {
             if (aIDestinationSetter.target == this.transform)
@@ -30,7 +32,7 @@ public class Timer : MonoBehaviour, StopTimerInteface
                     animator.SetBool("Press", true);
                     GetComponent<CircleCollider2D>().enabled = false;
 
-                    //aIDestinationSetter.target = null;
+                    aIDestinationSetter.GetComponent<Target>().setTargetPos(aIDestinationSetter.transform.position);
                 }
             }
             else

@@ -84,6 +84,11 @@ public class SelectSoldier : MonoBehaviour
                         selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
                         hit.collider.gameObject.GetComponent<HealthPackInterface>().HealthPack(selectedSoldier.transform);
                     }
+                    else if (hit.collider != null && hit.collider.gameObject.tag == "Captured")
+                    {
+                        selectedSoldier.GetComponent<Target>().setTransformAsTarget(hit.collider.transform);
+                        hit.collider.gameObject.GetComponent<CapturedSoldierInterface>().Rescue(selectedSoldier.transform);
+                    }
                     else
                     {
                         selectedSoldier.GetComponent<Target>().setTargetPos(mouseRay.origin);

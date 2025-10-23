@@ -1,11 +1,10 @@
 using Pathfinding;
-using TMPro;
 using UnityEngine;
 
-public class HealthPack : MonoBehaviour, HealthPackInterface
+public class CapturedSoldier : MonoBehaviour, CapturedSoldierInterface
 {
     [SerializeField] private float distance = 1f;
-    [SerializeField] private float healingAmmount = 1f;
+    [SerializeField] GameObject soldierPrefab;
 
     private AIDestinationSetter aIDestinationSetter;
 
@@ -19,7 +18,7 @@ public class HealthPack : MonoBehaviour, HealthPackInterface
 
                 if (dist <= distance)
                 {
-                    aIDestinationSetter.gameObject.GetComponent<IncreaseHealth>().Health(healingAmmount);
+                    Instantiate(soldierPrefab, this.transform.position, Quaternion.identity);
 
                     aIDestinationSetter.GetComponent<Target>().setTargetPos(aIDestinationSetter.transform.position);
 
@@ -33,7 +32,7 @@ public class HealthPack : MonoBehaviour, HealthPackInterface
         }
     }
 
-    void HealthPackInterface.HealthPack(Transform Soldier)
+    public void Rescue(Transform Soldier)
     {
         aIDestinationSetter = Soldier.gameObject.GetComponent<AIDestinationSetter>();
     }
