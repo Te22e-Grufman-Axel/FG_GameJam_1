@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a9ecd7a60e2754e87d4244d9cd1090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DetectTarget
-  range: 5
+  range: 6
   DetectLayerMask:
     serializedVersion: 2
     m_Bits: 256
@@ -180,7 +180,7 @@ MonoBehaviour:
   aIPath: {fileID: 4879463711053405191}
   animator: {fileID: 5101996688449810713}
   soldier: 1
-  alarmRadius: 10
+  alarmRadius: 20
   alarmLayerMask:
     serializedVersion: 2
     m_Bits: 256
@@ -189,7 +189,7 @@ MonoBehaviour:
   damage: 2
   attackRate: 0.2
   spread: 5
-  range: 4
+  range: 5
   meeleDamage: 0
   meeleAttackRate: 0
   meeleRange: 0
