@@ -36,8 +36,8 @@ public class SelectSoldier : MonoBehaviour
         {
             if (Time.timeScale > 0)
             {
-                Time.timeScale = 0f;
                 pauseMenue.SetActive(true);
+                Time.timeScale = 0f;
             }
             else
             {

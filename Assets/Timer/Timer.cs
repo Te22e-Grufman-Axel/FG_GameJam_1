@@ -37,9 +37,9 @@ public class Timer : MonoBehaviour, StopTimerInteface
                     buttonAnimator.SetBool("Press", true);
                     GetComponent<CircleCollider2D>().enabled = false;
 
-                    aIDestinationSetter.GetComponent<Target>().setTargetPos(aIDestinationSetter.transform.position);
-
                     StartCoroutine(NextSceneCoroutine());
+
+                    aIDestinationSetter.GetComponent<Target>().setTargetPos(aIDestinationSetter.transform.position);
                 }
             }
             else

@@ -13,7 +13,7 @@ public class PauseMenue : MonoBehaviour
 
     private void Awake()
     {
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
     }
 
     public void Resume()
@@ -25,7 +25,6 @@ public class PauseMenue : MonoBehaviour
     public void Settings()
     {
         inSettings = !inSettings;
-
         settings.SetActive(inSettings);
     }
 
