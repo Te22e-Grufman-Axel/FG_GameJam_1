@@ -1,7 +1,8 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class SelectSoldier : MonoBehaviour
+public class SelectSoldier : MonoBehaviour, EndInterfase
 {
     public GameObject selectedSoldier;
 
@@ -96,5 +97,17 @@ public class SelectSoldier : MonoBehaviour
                 selectedSoldier.GetComponent<DrawPath>().drawNewPath = true;
             }
         }
+    }
+
+    public void End()
+    {
+        StartCoroutine(ExampleCoroutine());
+    }
+
+    IEnumerator ExampleCoroutine()
+    {
+        pauseMenue.SetActive(true);
+        yield return new WaitForSeconds(1);
+        Time.timeScale = 0f;
     }
 }

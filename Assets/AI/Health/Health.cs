@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,16 +27,17 @@ public class Health : MonoBehaviour, HitInterface, IncreaseHealth
 
         if (soldier)
         {
-            ColorUtility.TryParseHtmlString("#438D2B", out color);
+            UnityEngine.ColorUtility.TryParseHtmlString("#438D2B", out color);
         }
         else
         {
-            ColorUtility.TryParseHtmlString("#8D2B2B", out color);
+            UnityEngine.ColorUtility.TryParseHtmlString("#8D2B2B", out color);
         }
 
         image.color = color;
     }
 
+    [System.Obsolete]
     public void TakeDamage(float damage)
     {
         health -= damage;
@@ -49,6 +52,27 @@ public class Health : MonoBehaviour, HitInterface, IncreaseHealth
             if (animator != null)
             {
                 animator.SetBool("Dead", true);
+            }
+
+            if(soldier == true)
+            {
+                Health[] healthScript = FindObjectsOfType<Health>();
+
+                List<Health> soldierHealthscripts = new List<Health>();
+
+                foreach (Health soldierHealth in healthScript)
+                {
+                    if (soldierHealth.soldier == true)
+                    {
+                        Debug.Log(soldierHealth.soldier);
+                        soldierHealthscripts.Add(soldierHealth);
+                    }
+                }
+
+                if (soldierHealthscripts.Count - 1 <= 0)
+                {
+                    FindObjectOfType<SelectSoldier>().End();
+                }
             }
 
             this.transform.GetChild(0).transform.parent = null;

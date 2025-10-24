@@ -10,7 +10,7 @@ public class ExplosiveSpawner : MonoBehaviour
 
     private void Awake()
     {
-        currentTime = timer;
+        currentTime = 3f;
     }
 
     private void Update()

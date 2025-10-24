@@ -186,7 +186,7 @@ MonoBehaviour:
     m_Bits: 256
   meele: 0
   shooting: 1
-  damage: 1
+  damage: 1.5
   attackRate: 0.2
   spread: 5
   range: 5
@@ -197,6 +197,7 @@ MonoBehaviour:
   ableToAttack: 0
   bullet: {fileID: 4364015895036261236, guid: 0e5837ee997b8b84bb8c7b8b9f9c3d36, type: 3}
   firePos: {fileID: 3659591989944694217}
+  shootSound: {fileID: 0}
 --- !u!58 &3332849282588172633
 CircleCollider2D:
   m_ObjectHideFlags: 0
