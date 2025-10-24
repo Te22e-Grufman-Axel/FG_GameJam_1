@@ -186,7 +186,7 @@ MonoBehaviour:
     m_Bits: 256
   meele: 0
   shooting: 1
-  damage: 2
+  damage: 1
   attackRate: 0.2
   spread: 5
   range: 5
@@ -232,7 +232,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.09}
-  m_Radius: 0.44
+  m_Radius: 0.59
 --- !u!114 &4758466366179808720
 MonoBehaviour:
   m_ObjectHideFlags: 0
