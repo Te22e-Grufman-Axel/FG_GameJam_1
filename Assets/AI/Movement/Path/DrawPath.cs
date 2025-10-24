@@ -26,7 +26,14 @@ public class DrawPath : MonoBehaviour
     {
         if(path != aiPath.GetPath())
         {
-            GenerateGraphics();
+            if(aIDestinationSetter.target != null)
+            {
+                GenerateGraphics();
+            }
+            else
+            {
+                RemovePathGraphics();
+            }
         }
 
         if(pathMarkers.Count > 0)
@@ -46,12 +53,7 @@ public class DrawPath : MonoBehaviour
     {
         drawNewPath = false;
 
-        foreach(GameObject go in pathMarkers)
-        {
-            Destroy(go);
-        }
-
-        pathMarkers.Clear();
+        RemovePathGraphics();
 
         path = aiPath.GetPath();
 
@@ -76,5 +78,15 @@ public class DrawPath : MonoBehaviour
 
             pathMarkers.Enqueue(Instantiate(destinationPrefab, aIDestinationSetter.target.position, Quaternion.identity));
         }
+    }
+
+    private void RemovePathGraphics()
+    {
+        foreach (GameObject go in pathMarkers)
+        {
+            Destroy(go);
+        }
+
+        pathMarkers.Clear();
     }
 }

@@ -2,6 +2,8 @@ using UnityEngine;
 using Pathfinding;
 using TMPro;
 using System.Linq;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Timer : MonoBehaviour, StopTimerInteface
 {
@@ -17,6 +19,8 @@ public class Timer : MonoBehaviour, StopTimerInteface
     [SerializeField] float time = 100f;
 
     private AIDestinationSetter aIDestinationSetter;
+
+    [SerializeField] private string endSceneName = "EndScene";
 
     [System.Obsolete]
     private void Update()
@@ -34,6 +38,8 @@ public class Timer : MonoBehaviour, StopTimerInteface
                     GetComponent<CircleCollider2D>().enabled = false;
 
                     aIDestinationSetter.GetComponent<Target>().setTargetPos(aIDestinationSetter.transform.position);
+
+                    StartCoroutine(NextSceneCoroutine());
                 }
             }
             else
@@ -80,5 +86,12 @@ public class Timer : MonoBehaviour, StopTimerInteface
         {
             go.Kill();
         }
+    }
+
+    IEnumerator NextSceneCoroutine()
+    {
+        yield return new WaitForSeconds(2f);
+
+        SceneManager.LoadScene(endSceneName);
     }
 }

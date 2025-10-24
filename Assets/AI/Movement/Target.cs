@@ -41,14 +41,14 @@ public class Target : MonoBehaviour
 
     public void setTargetPos(Vector3 newPos)
     {
-        Debug.Log("setTargetPos");
+        //Debug.Log("setTargetPos");
         destinationSetter.target = target;
         target.position = newPos;
     }
 
     public void setTransformAsTarget(Transform newTarget)
     {
-        Debug.Log("setTransformAsTarget");
+        //Debug.Log("setTransformAsTarget");
         destinationSetter.target = newTarget;
     }
 }

@@ -113,7 +113,7 @@ public class DetectTarget : MonoBehaviour, DetectShot
     {
         Vector3 dir = target.position - this.transform.position;
 
-        RaycastHit2D hit = Physics2D.Raycast(this.transform.position, dir, dir.magnitude, ViewLayerMask);
+        RaycastHit2D hit = Physics2D.CircleCast(this.transform.position, 0.15f, dir, dir.magnitude, ViewLayerMask);
 
         Debug.DrawRay(this.transform.position, dir);
 

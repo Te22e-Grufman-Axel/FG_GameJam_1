@@ -4355,7 +4355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab38c0108bea2d54aa6d5b360d2d012d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
-  playLevelName: TestingScene
+  playLevelName: OpeningScene
   settings: {fileID: 38602526}
 --- !u!4 &1131684509 stripped
 Transform:
