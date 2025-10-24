@@ -64,7 +64,6 @@ public class Health : MonoBehaviour, HitInterface, IncreaseHealth
                 {
                     if (soldierHealth.soldier == true)
                     {
-                        Debug.Log(soldierHealth.soldier);
                         soldierHealthscripts.Add(soldierHealth);
                     }
                 }
@@ -74,6 +73,8 @@ public class Health : MonoBehaviour, HitInterface, IncreaseHealth
                     FindObjectOfType<SelectSoldier>().End();
                 }
             }
+
+            this.gameObject.GetComponent<DrawPath>().drawNewPath = true;
 
             this.transform.GetChild(0).transform.parent = null;
             Destroy(this.gameObject);
