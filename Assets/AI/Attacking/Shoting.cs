@@ -40,6 +40,7 @@ public class Shoting : MonoBehaviour
     [SerializeField] private Transform firePos;
 
     private SpriteRenderer spriteRenderer;
+    [SerializeField] private AudioClip shootSound;
 
     private void Awake()
     {
@@ -198,6 +199,10 @@ public class Shoting : MonoBehaviour
         if (soldier)
         {
             AlarmNerbyEnemys();
+            if (shootSound != null)
+            {
+                SoundFXManager.Instance.PlaySound(shootSound, firePos, 1f);
+            }
         }
     }
 

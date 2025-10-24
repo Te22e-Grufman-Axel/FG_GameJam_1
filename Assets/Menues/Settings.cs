@@ -17,11 +17,19 @@ public class Settings : MonoBehaviour
     [SerializeField] private Toggle toggle;
     private bool fullscreen;
 
+    [SerializeField] public Slider mainVolumeSlider;
+    [SerializeField] public Slider musicVolumeSlider;
+    [SerializeField] public Slider sfxVolumeSlider;
+    [SerializeField] private SoundMixerManager soundMixerManager;
+
     private void Awake()
     {
         this.gameObject.SetActive(false);
         fullscreen = Screen.fullScreen;
         toggle.isOn = fullscreen;
+
+        soundMixerManager = FindObjectOfType<SoundMixerManager>();
+        soundMixerManager.settingsMenu = this;
     }
 
     [System.Obsolete]
@@ -33,7 +41,7 @@ public class Settings : MonoBehaviour
         resolutionDropdown.ClearOptions();
         currentRefreshRate = Screen.currentResolution.refreshRate;
 
-        for(int i = 0; i < resolutions.Length; i++)
+        for (int i = 0; i < resolutions.Length; i++)
         {
             if (resolutions[i].refreshRate == currentRefreshRate)
             {
@@ -42,12 +50,12 @@ public class Settings : MonoBehaviour
         }
 
         List<string> options = new List<string>();
-        for(int i = 0; i < filteredResolutions.Count; i++)
+        for (int i = 0; i < filteredResolutions.Count; i++)
         {
             string resolutionOption = filteredResolutions[i].width + "x" + filteredResolutions[i].height + " " + filteredResolutions[i].refreshRate + " Hz";
             options.Add(resolutionOption);
 
-            if(filteredResolutions[i].width == Screen.width && filteredResolutions[i].height == Screen.height)
+            if (filteredResolutions[i].width == Screen.width && filteredResolutions[i].height == Screen.height)
             {
                 currentResulutionIndex = i;
             }
